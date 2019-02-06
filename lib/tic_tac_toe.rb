@@ -17,7 +17,7 @@ class TicTacToe
     turn
   end
   if(won?)
-    puts "Congratulations #{winner}!"
+    puts "Congratulations #{winner(board)}!"
   end
 end
   
@@ -82,7 +82,7 @@ end
   end
 
   def draw?
-    full? && !won? ? puts "Cat's Game!" : false
+    full? ? !won? : false
   end
   
   def over?
