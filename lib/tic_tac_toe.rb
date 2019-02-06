@@ -81,9 +81,13 @@ end
     @board.none? {|ele| ele == " "}
   end
 
-  def draw?
+ def draw?
     if(full?)
-      ? !won? : false
+      puts "Cat's Game!"
+      return !won?
+    else
+      return false
+    end
   end
   
   def over?
