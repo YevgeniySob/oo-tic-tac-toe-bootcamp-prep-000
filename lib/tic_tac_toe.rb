@@ -82,7 +82,7 @@ end
   end
 
   def draw?
-    full? && !won? ? "Cat's Game!" : false
+    full? && !won? ? puts "Cat's Game!" : false
   end
   
   def over?
