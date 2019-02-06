@@ -11,6 +11,16 @@ class TicTacToe
     @board.count{|token| token == "X" || token == "O"}
   end
   
+  def play
+  
+  while !over?
+    turn
+  end
+  if(won?)
+    puts "Congratulations #{winner}!"
+  end
+end
+  
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
